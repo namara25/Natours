@@ -5,3 +5,6 @@
     clear: both;
   }
 }
+@mixin box_shadow($blur-radius, $opacity) {
+  box-shadow: 0.2rem 0.15rem $blur-radius rgba($color-black, $opacity);
+}
