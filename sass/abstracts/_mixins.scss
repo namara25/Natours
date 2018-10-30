@@ -8,3 +8,9 @@
 @mixin box_shadow($blur-radius, $opacity) {
   box-shadow: 0.2rem 0.15rem $blur-radius rgba($color-black, $opacity);
 }
+@mixin center_element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
