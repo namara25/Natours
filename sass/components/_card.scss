@@ -139,7 +139,7 @@
   }
   // Back side Styling
   &__cta {
-    @include center_element;
+    @include center_absolute;
     width: 80%;
     text-align: center;
   }

@@ -79,7 +79,7 @@
       width: 1.3rem;
       border-radius: 50%;
       background: $color-primary;
-      @include center_element;
+      @include center_absolute;
       opacity: 0;
       transition: opacity 0.05s;
     }
