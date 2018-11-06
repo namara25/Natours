@@ -26,6 +26,11 @@
   &__left {
     width: 33.3333%;
     display: table-cell;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__right {
@@ -33,11 +38,27 @@
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
+
+    @include respond(tab-land) {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__image {
     display: block;
     width: 100%;
+
+    @include respond(tab-land) {
+      width: 50%;
+      height: 30rem;
+      float: left;
+      object-fit: cover;
+      margin-bottom: 2rem;
+    }
+    @include respond(mobile) {
+      display: none;
+    }
   }
 
   &__text {
@@ -46,6 +67,9 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $color-gray-light-2;
+    @include respond(mobile) {
+      column-count: 1;
+    }
   }
 
   // funcionality
