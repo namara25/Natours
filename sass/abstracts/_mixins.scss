@@ -29,6 +29,9 @@ $breakpoint argument:
 -> tab-land
 -> big-desktop
 
+order for adding media query :
+ base + typography > general layout + grid > page layout > components
+
 1em = 16px
 */
 @mixin respond($breakpoint) {
@@ -41,7 +44,7 @@ $breakpoint argument:
 
   @if $breakpoint == tab-portrait {
     // 900px
-    @media (max-width: 56.25) {
+    @media (max-width: 56.25em) {
       @content;
     }
   }

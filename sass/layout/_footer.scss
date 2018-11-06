@@ -4,6 +4,10 @@
   font-size: 1.4rem;
   padding: 10rem 0;
 
+  @include respond(tab-portrait) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
   }
@@ -17,6 +21,11 @@
     display: inline-block;
     border-top: 1px solid $color-gray-dark-1;
     padding-top: 2rem;
+
+    @include respond(tab-portrait) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -55,5 +64,10 @@
     padding-top: 2rem;
     width: 80%;
     float: right;
+
+    @include respond(tab-portrait) {
+      width: 100%;
+      float: none;
+    }
   }
 }
